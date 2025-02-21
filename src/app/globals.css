@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-poppins: Poppins;
+  --font-sigmar: Sigmar;
+  --font-kanit: Kanit;
 }
 
 @media (prefers-color-scheme: dark) {
