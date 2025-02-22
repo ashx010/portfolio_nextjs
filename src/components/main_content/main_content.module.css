@@ -2,6 +2,18 @@
     background: rgb(28 30 32);
     width: 20%;
     border-radius: 15px;
+    height: fit-content;
+}
+
+.main_container{
+    width: 75%;
+    display: flex;
+}
+
+.about_container{
+    background: rgb(28 30 32);
+    width: 100%;
+    border-radius: 15px;
 }
 
 .link_sidebar{
@@ -45,4 +57,9 @@
     position: absolute;
     top: -10%;
     right: -8%;
+}
+
+.image_container{
+    width: 30%;
+    aspect-ratio: 1;
 }

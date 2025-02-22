@@ -23,7 +23,7 @@ function Sidebar(props) {
     };
 
     return (
-        <div className={`z-10 sticky px-10 py-7 ${styles.sidebar_container} backdrop-blur-sm`}>
+        <div className={`z-10 sticky px-10 py-7 ${styles.sidebar_container} backdrop-blur-sm top-6`}>
             <ul className={`list-none space-y-6 font-mono text-white/70 font-normal uppercase text-left tracking-wider`}>
                 <li onClick={() => handleToggleSidebar('about')}  className={`list-none ${styles.list_sidebar} relative`}>
                     <Link className={`${styles.link_sidebar} ${toggleSidebar.about ? styles.active : " "}`} href="#about">
