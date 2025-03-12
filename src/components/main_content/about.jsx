@@ -9,11 +9,11 @@ function About(props) {
         <div id="about" className={`${styles.about_container} px-10 py-12 flex justify-between flex-row space-x-4`}>
             <div className={`${styles.image_container} relative`}>
                 <Image
-                    src="/profileImg.jpeg"
+                    src="/pf-1.png"
                     alt="profile picture"
                     fill={true}
                     sizes="25vw"
-                    style={{objectFit: "cover", objectPosition: "center", borderRadius: "50%"}}
+                    style={{objectFit: "cover", objectPosition: "center", borderRadius: "50%", filter: "drop-shadow(0px 0px 50px #000)"}}
                     priority={true}
                 />
                 <div className={`${styles.profileFoot}`}>
@@ -31,6 +31,16 @@ function About(props) {
                     Full Stack Developer.<br/>
                     Data Science Enthusiast<br/>
                 </h2>
+                <div className={`space-x-2 flex flex-row space-between`}>
+                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Python</div>
+                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> SQL</div>
+                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Java</div>
+                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Javascript</div>
+                </div>
+                <p className={`tracking-wide font-mono text-white/70 font-normal`}>
+                    Computer Science graduate with experience in web development and data science. Driven by curiosity and a knack for
+                    problem-solving.
+                </p>
             </div>
         </div>
     );
