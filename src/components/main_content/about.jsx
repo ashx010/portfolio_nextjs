@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './main_content.module.css';
+import styles from './about.module.css';
 import Image from 'next/image';
 import Typewriter from "@/components/main_content/Typewriter";
 import {KanitFont} from "@/app/fonts"
@@ -12,7 +12,7 @@ function About(props) {
                     src="/pf-1.png"
                     alt="profile picture"
                     fill={true}
-                    sizes="25vw"
+                    sizes="50vw"
                     style={{objectFit: "cover", objectPosition: "center", borderRadius: "50%", filter: "drop-shadow(0px 0px 50px #000)"}}
                     priority={true}
                 />
@@ -32,10 +32,38 @@ function About(props) {
                     Data Science Enthusiast<br/>
                 </h2>
                 <div className={`space-x-2 flex flex-row space-between`}>
-                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Python</div>
-                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> SQL</div>
-                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Java</div>
-                    <div className={`border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white/80`}><span className={`font-thin text-sm tracking-tighter`}>{"</>"}</span> Javascript</div>
+                    <div className={`whitespace-nowrap overflow-hidden flex items-center cursor-default border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white`}>
+                        <span className={`mr-2`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                        </span>
+                        Python
+                    </div>
+                    <div className={`whitespace-nowrap overflow-hidden flex items-center cursor-default border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white`}>
+                        <span className={`mr-2`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                        </span>
+                        Java
+                    </div>
+                    <div className={`whitespace-nowrap overflow-hidden flex items-center cursor-default border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white`}>
+                        <span className={`mr-2`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                        </span>
+                        SQL
+                    </div>
+                    <div className={`whitespace-nowrap overflow-hidden flex items-center cursor-default border border-dashed rounded-xl border-white/40 px-3 py-1 text-white/40 tracking-wider uppercase font-mono hover:text-white`}>
+                        <span className={`mr-2`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>
+                        </span>
+                        JavaScript
+                    </div>
                 </div>
                 <p className={`tracking-wide font-mono text-white/70 font-normal`}>
                     Computer Science graduate with experience in web development and data science. Driven by curiosity and a knack for

@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from 'react';
-import styles from './main_content.module.css';
+import styles from './sidebar.module.css';
 import Link from "next/link";
 
 function Sidebar(props) {

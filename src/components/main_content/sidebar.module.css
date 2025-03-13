@@ -5,17 +5,6 @@
     height: fit-content;
 }
 
-.main_container{
-    width: 75%;
-    display: flex;
-}
-
-.about_container{
-    background: rgb(28 30 32);
-    width: 100%;
-    border-radius: 15px;
-}
-
 .link_sidebar{
     display: inline-flex;
     justify-content: space-between;
@@ -57,32 +46,4 @@
     position: absolute;
     top: -10%;
     right: -8%;
-}
-
-.image_container{
-    width: 30%;
-    aspect-ratio: 1;
-    height: fit-content;
-    background: #333;
-    border-radius: 50%;
-}
-
-.about_info_container{
-    width: 65%;
-}
-
-.profileFoot{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: auto;
-    height: fit-content;
-    border-radius: 15px;
-    background: #000000c2;
-    padding: 5px 1rem;
-    backdrop-filter: blur(2px);
-}
-
-.about_head_container{
-    max-width: 80%;
 }
