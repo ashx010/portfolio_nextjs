@@ -7,15 +7,15 @@ import Image from "next/image";
 function Portfolio(props) {
     const data = [
         {
-            src: "/titanic.jpg",
+            src: "/car_prevent.jpg",
             alt: "project_1",
             type: "dataScience",
             name: "Data Science",
-            pro_name: "Titanic: Survival Analysis",
-            link_name: "titanic",
+            pro_name: "Car Accident Prevention Alert using AI",
+            link_name: "car_prevent",
         },
         {
-            src: "/globe_with_routes.png",
+            src: "/map.svg",
             alt: "project_2",
             type: "webDevelop",
             name: "Web development",
@@ -23,12 +23,12 @@ function Portfolio(props) {
             link_name: "map_interactive",
         },
         {
-            src: "/globe_with_routes.png",
+            src: "/tcart.svg",
             alt: "project_3",
             type: "webDevelop",
             name: "Web development",
-            pro_name: "Mapping Interactive",
-            link_name: "map_interactive",
+            pro_name: "TCART: Travel Assistant",
+            link_name: "tcart",
         },
         {
             src: "/titanic.jpg",
@@ -71,7 +71,7 @@ function Portfolio(props) {
                                 src={item.src}
                                 alt={item.alt}
                                 fill={true}
-                                className={`group-hover:blur-[1.5px] group-hover:scale-105`}
+                                className={`group-hover:blur-[1.5px] group-hover:scale-105 group-hover:brightness-50`}
                                 sizes="50vw"
                                 style={{objectFit: "cover", objectPosition: "center", borderRadius: "1rem"}}
                                 priority={true}

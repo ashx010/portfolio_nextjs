@@ -12,13 +12,13 @@ function Header(props) {
             </h1>
             <ul className={`flex space-x-4 list-none font-mono font-semibold py-4`}>
                 <li className={`list-none`}>
-                    <Link href="/">LinkedIN</Link>
+                    <Link href="https://www.linkedin.com/in/yash-aggarwal-ashx010/" target={'_blank'}>LinkedIN</Link>
                 </li>
                 <li className={`list-none`}>
-                    <Link href="/">GitHub</Link>
+                    <Link href="https://github.com/ashx010/" target={'_blank'}>GitHub</Link>
                 </li>
                 <li className={`list-none`}>
-                    <Link href="/">Resume</Link>
+                    <Link href="/Yash%20Aggarwal%20Resume.pdf" target={'_blank'}>Resume</Link>
                 </li>
             </ul>
         </header>
