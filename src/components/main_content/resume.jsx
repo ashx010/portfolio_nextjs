@@ -39,14 +39,14 @@ function Resume(props) {
         },
     ];
     return (
-        <div id="portfolio" className={`${styles.res_container} px-10 py-12 space-y-4`}>
+        <div id="portfolio" className={`${styles.res_container} px-4 py-6 lg:px-10 lg:py-12 space-y-4`}>
             <h3 className={`font-mono font-medium uppercase text-lg tracking-wider relative pt-4 mb-5 dark:text-white before:content-['#'] before:pr-2 after:content-[attr(data-backdrop-text)] after:absolute after:top-0 after:left-0 after:font-poppins after:font-bold after:uppercase after:text-4xl after:opacity-15`} data-backdrop-text={"Resume"}>
                 Resume
             </h3>
-            <h1 className={`text-3xl ${KanitFont.variable} font-[kanit] font-black tracking-wider`}>
+            <h1 className={`text-2xl lg:text-3xl ${KanitFont.variable} font-[kanit] font-black tracking-wider`}>
                 Education & Experience
             </h1>
-            <div className={`grid grid-cols-1 pt-6 md:grid-cols-2 gap-6 justify-start items-start`}>
+            <div className={`grid grid-cols-1 pt-6 lg:grid-cols-2 gap-6 justify-start items-start`}>
                 <div className={`relative space-y-6 py-6 px-4 ${styles.res_cont2}`}>
                     <div className={`text-3xl stroke-2 stroke-white`}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
@@ -57,7 +57,7 @@ function Resume(props) {
                     </div>
                     {
                         data.map((item, index) => (
-                            <div className="group pt-2">
+                            <div key={index} className="group pt-2">
                                 <span className="relative inline-block px-4 py-2 rounded-full border border-black/20 dark:border-white/20 border-dashed font-mono font-medium uppercase text-sm tracking-[0.5px] text-pColor dark:text-white/70 group-hover:text-black dark:group-hover:text-white transition ease-linear duration-100 before:content-[''] before:absolute before:top-1/2 before:left-[-20px] before:w-[20px] before:h-[1px] before:border-t before:border-black/20 dark:before:border-white/20 before:border-dashed after:content-[''] after:absolute after:top-1/2 after:left-[-22px] after:-translate-y-1/2 after:bg-black dark:after:bg-white after:w-[5px] after:h-[5px] after:rounded-full">
                                     {item.sTime}
                                 </span>
@@ -91,7 +91,7 @@ function Resume(props) {
                     </div>
                     {
                         data2.map((item, index) => (
-                            <div className="group pt-2">
+                            <div key={index} className="group pt-2">
                                 <span className="relative inline-block px-4 py-2 rounded-full border border-black/20 dark:border-white/20 border-dashed font-mono font-medium uppercase text-sm tracking-[0.5px] text-pColor dark:text-white/70 group-hover:text-black dark:group-hover:text-white transition ease-linear duration-100 before:content-[''] before:absolute before:top-1/2 before:left-[-20px] before:w-[20px] before:h-[1px] before:border-t before:border-black/20 dark:before:border-white/20 before:border-dashed after:content-[''] after:absolute after:top-1/2 after:left-[-22px] after:-translate-y-1/2 after:bg-black dark:after:bg-white after:w-[5px] after:h-[5px] after:rounded-full">
                                     {item.sTime}
                                 </span>

@@ -5,15 +5,10 @@
 }
 
 .image_container{
-    width: 30%;
     aspect-ratio: 1;
     height: fit-content;
     background: #333;
     border-radius: 50%;
-}
-
-.about_info_container{
-    width: 65%;
 }
 
 .profileFoot{
@@ -26,8 +21,4 @@
     background: #000000c2;
     padding: 5px 1rem;
     backdrop-filter: blur(2px);
-}
-
-.about_head_container{
-    max-width: 80%;
 }

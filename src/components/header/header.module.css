@@ -5,3 +5,9 @@
     color: transparent;
     -webkit-text-stroke: 2px white;
 }
+
+@media (max-width: 1000px) {
+    .stroke_text{
+        -webkit-text-stroke: 1px white;
+    }
+}

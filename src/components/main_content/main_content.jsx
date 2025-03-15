@@ -8,7 +8,7 @@ function MainContent(props) {
     return (
         <main className={`space-y-6 lg:space-y-0 lg:space-x-8 lg:flex xl:space-x-12 top-2`}>
             <Sidebar />
-            <div className={`space-y-6 w-3/4 pb-12`}>
+            <div className={`space-y-6 w-full lg:w-3/4 pb-12`}>
                 <About />
                 <Portfolio />
                 <Resume />

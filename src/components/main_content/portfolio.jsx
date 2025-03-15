@@ -50,19 +50,19 @@ function Portfolio(props) {
         }
     }
     return (
-        <div id="portfolio" className={`${styles.port_container} px-10 py-12 space-y-4`}>
-            <h3 className={`font-mono font-medium uppercase text-lg tracking-wider relative pt-4 mb-5 dark:text-white before:content-['#'] before:pr-2 after:content-[attr(data-backdrop-text)] after:absolute after:top-0 after:left-0 after:font-poppins after:font-bold after:uppercase after:text-4xl after:opacity-15`} data-backdrop-text={"Portfolio"}>
+        <div id="portfolio" className={`${styles.port_container} px-4 py-6 lg:px-10 lg:py-12 space-y-4`}>
+            <h3 className={`font-mono font-medium uppercase text-lg tracking-wider relative pt-4 mb-5 dark:text-white before:content-['#'] before:pr-2 after:content-[attr(data-backdrop-text)] after:absolute after:top-0 after:left-0 after:${KanitFont.variable} after:font-[kanit] after:font-bold after:uppercase after:text-4xl after:opacity-15`} data-backdrop-text={"Portfolio"}>
                 Portfolio
             </h3>
-            <h1 className={`text-3xl ${KanitFont.variable} font-[kanit] font-black tracking-wider`}>
+            <h1 className={`text-2xl lg:text-3xl ${KanitFont.variable} font-[kanit] font-black tracking-wider`}>
                 My Latest Works
             </h1>
-            <div className={`pt-6 flex space-x-4 justify-start items-center`}>
+            <div className={`pt-2 lg:pt-6 flex lg:space-x-4 lg:space-y-0 space-y-4 lg:flex-row flex-col w-fit justify-start lg:items-center`}>
                 <div onClick={() => handleTogglePort("showAll")} className={`cursor-pointer border border-dashed rounded-xl px-3 py-1  tracking-wider font-mono ${portType.length === 2 ? "text-white/90 border-white/90" : "text-white/40 border-white/40"} hover:text-white/80`}>Show All</div>
                 <div onClick={() => handleTogglePort("webDevelop")} className={`cursor-pointer border border-dashed rounded-xl  px-3 py-1  tracking-wider font-mono ${portType.length === 1 && portType.includes("webDevelop") ? "text-white/90 border-white/90" : "text-white/40 border-white/40"} hover:text-white/80`}>Web Development</div>
                 <div onClick={() => handleTogglePort("dataScience")} className={`cursor-pointer border border-dashed rounded-xl  px-3 py-1 tracking-wider font-mono ${portType.length === 1 && portType.includes("dataScience") ? "text-white/90 border-white/90" : "text-white/40 border-white/40"} hover:text-white/80`}>Data Science : ML</div>
             </div>
-            <div className={`pt-6 grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center`}>
+            <div className={`pt-3 lg:pt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6 justify-items-center`}>
                 {data.map((item, index) => (
                     portType.includes(item.type) ? (
                         <div key={index}
@@ -82,7 +82,7 @@ function Portfolio(props) {
                             </span>
                             <div
                                 className="z-[1] absolute bottom-0 left-0 w-full px-7 pb-6 invisible opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 group-hover:mb-0 transition ease-out duration-[160ms]">
-                                <a className={`${KanitFont.variable} font-[kanit] font-semibold text-3xl tracking-[0.5px] transition-all ease-linear duration-100`}
+                                <a className={`${KanitFont.variable} font-[kanit] font-semibold text-xl lg:text-3xl tracking-[0.5px] transition-all ease-linear duration-100`}
                                    href={`portfolio/${item.link_name}`}>{item.pro_name}</a>
                             </div>
                         </div>) : null
