@@ -12,7 +12,7 @@ function Portfolio(props) {
             type: "dataScience",
             name: "Data Science",
             pro_name: "Car Accident Prevention Alert using AI",
-            link_name: "car_prevent",
+            link_name: "https://github.com/ashx010/Night-Time-Car-Accident-Prevention",
         },
         {
             src: "/map.svg",
@@ -20,7 +20,7 @@ function Portfolio(props) {
             type: "webDevelop",
             name: "Web development",
             pro_name: "Mapping Interactive",
-            link_name: "map_interactive",
+            link_name: "https://github.com/ashx010/Mapping-Application",
         },
         {
             src: "/tcart.svg",
@@ -28,7 +28,7 @@ function Portfolio(props) {
             type: "webDevelop",
             name: "Web development",
             pro_name: "TCART: Travel Assistant",
-            link_name: "tcart",
+            link_name: "https://tcart.scripet.com",
         },
         {
             src: "/titanic.jpg",
@@ -36,7 +36,7 @@ function Portfolio(props) {
             type: "dataScience",
             name: "Data Science",
             pro_name: "Titanic: Survival Analysis",
-            link_name: "titanic",
+            link_name: "https://www.kaggle.com/code/ashx010/titanic-data-analysis-and-model-deployment",
         }
     ];
     const [portType, setPortType] = useState(["webDevelop", "dataScience"]);
@@ -83,7 +83,7 @@ function Portfolio(props) {
                             <div
                                 className="z-[1] absolute bottom-0 left-0 w-full px-7 pb-6 invisible opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 group-hover:mb-0 transition ease-out duration-[160ms]">
                                 <a className={`${KanitFont.variable} font-[kanit] font-semibold text-xl lg:text-3xl tracking-[0.5px] transition-all ease-linear duration-100`}
-                                   href={`portfolio/${item.link_name}`}>{item.pro_name}</a>
+                                   href={`${item.link_name}`} target={"_blank"}>{item.pro_name}</a>
                             </div>
                         </div>) : null
                 ))}

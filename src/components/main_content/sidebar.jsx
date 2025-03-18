@@ -4,7 +4,7 @@ import styles from './sidebar.module.css';
 
 function Sidebar(props) {
     const [toggleSidebar, setToggleSidebar] = useState({
-        about: true,
+        about: false,
         portfolio: false,
         resume: false,
         skills: false,
@@ -47,12 +47,12 @@ function Sidebar(props) {
 
     const handleToggleSidebar = (section) => {
         setToggleSidebar({
-            about: section === 'about',
-            portfolio: section === 'portfolio',
-            resume: section === 'resume',
-            skills: section === 'skills',
-            blog: section === 'blog',
-            contact: section === 'contact'
+            about: section === 'about1', //remove 1 from everywhere in this
+            portfolio: section === 'portfolio1',
+            resume: section === 'resume1',
+            skills: section === 'skills1',
+            blog: section === 'blog1',
+            contact: section === 'contact1'
         });
     };
 
@@ -61,7 +61,7 @@ function Sidebar(props) {
             <ul className={`list-none space-x-4 lg:space-x-0 lg:space-y-6 font-mono text-xl lg:text-base text-white/70 font-normal uppercase text-left tracking-wider flex flex-row w-full justify-around items-center content-center lg:block`}>
                 {itemData.map((item, i) => (
                     <li key={i} onClick={() => handleToggleSidebar(item.toggleName)}
-                        className={`list-none group relative`}>
+                        className={`list-none group cursor-pointer relative`}>
                         <div className={`inline-flex group-hover:text-white justify-between items-center w-full content-center ${styles.sidebar_section_link} ${toggleSidebar[item.toggleName] ? `font-bold text-white 0 ${styles.active} group-hover:before:text-white` : null}`}>
                             <span className={`hidden lg:block group-hover:text-white`}>{item.name}</span>
                             <span className={`block lg:hidden`}>{item.abbr}</span>
