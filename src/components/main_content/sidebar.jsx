@@ -7,6 +7,7 @@ function Sidebar(props) {
         about: true,
         portfolio: false,
         resume: false,
+        skills: false,
         blog: false,
         contact: false
     });
@@ -28,6 +29,11 @@ function Sidebar(props) {
             toggleName: "resume"
         },
         {
+            name: "Skills",
+            abbr: "S",
+            toggleName: "skills"
+        },
+        {
             name: "Blog",
             abbr: "B",
             toggleName: "blog"
@@ -44,6 +50,7 @@ function Sidebar(props) {
             about: section === 'about',
             portfolio: section === 'portfolio',
             resume: section === 'resume',
+            skills: section === 'skills',
             blog: section === 'blog',
             contact: section === 'contact'
         });

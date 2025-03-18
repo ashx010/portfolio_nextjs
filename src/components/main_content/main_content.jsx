@@ -3,6 +3,7 @@ import Sidebar from './sidebar';
 import About from "./about";
 import Portfolio from "./portfolio";
 import Resume from "./resume";
+import Skills from "./skills";
 
 function MainContent(props) {
     return (
@@ -12,6 +13,7 @@ function MainContent(props) {
                 <About />
                 <Portfolio />
                 <Resume />
+                <Skills />
             </div>
         </main>
     );

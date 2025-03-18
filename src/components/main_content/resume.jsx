@@ -26,16 +26,16 @@ function Resume(props) {
     ];
     const data2 = [
         {
-            sTime: "August, 2022",
-            course: "Data Science with Python",
-            special: "Trainee",
-            name: "IBM"
-        },
-        {
             sTime: "Sep, 2023 - Mar, 2024",
             course: "Backend Developer",
             special: "Intern",
             name: "Mapping DigiWorld",
+        },
+        {
+            sTime: "August, 2022",
+            course: "Data Science with Python",
+            special: "Trainee",
+            name: "IBM"
         },
     ];
     return (
