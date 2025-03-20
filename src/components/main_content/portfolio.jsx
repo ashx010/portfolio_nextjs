@@ -31,13 +31,29 @@ function Portfolio(props) {
             link_name: "https://tcart.scripet.com",
         },
         {
-            src: "/titanic.jpg",
+            src: "/digit_reco.jpg",
             alt: "project_4",
+            type: "dataScience",
+            name: "Data Science",
+            pro_name: "Digit Recognition using CNN",
+            link_name: "https://www.kaggle.com/code/ashx010/digit-recognizer-cnn-computer-vision-0-986",
+        },
+        {
+            src: "/house_price.svg",
+            alt: "project_5",
+            type: "dataScience",
+            name: "Data Science",
+            pro_name: "House Price Analysis",
+            link_name: "https://www.kaggle.com/code/ashx010/house-price-data-analysis-and-prediction-model",
+        },
+        {
+            src: "/titanic.jpg",
+            alt: "project_6",
             type: "dataScience",
             name: "Data Science",
             pro_name: "Titanic: Survival Analysis",
             link_name: "https://www.kaggle.com/code/ashx010/titanic-data-analysis-and-model-deployment",
-        }
+        },
     ];
     const [portType, setPortType] = useState(["webDevelop", "dataScience"]);
     const handleTogglePort = (choice) => {
@@ -63,8 +79,10 @@ function Portfolio(props) {
                 <div onClick={() => handleTogglePort("dataScience")} className={`cursor-pointer border border-dashed rounded-xl  px-3 py-1 tracking-wider font-mono ${portType.length === 1 && portType.includes("dataScience") ? "text-white/90 border-white/90" : "text-white/40 border-white/40"} hover:text-white/80`}>Data Science : ML</div>
             </div>
             <div className={`pt-3 lg:pt-6 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6 justify-items-center`}>
-                {data.map((item, index) => (
-                    portType.includes(item.type) ? (
+                {data
+                    .filter((item) => portType.includes(item.type))
+                    .slice(0, 4)
+                    .map((item, index) => (
                         <div key={index}
                              className={`group p-4 w-full h-fit overflow-hidden relative aspect-square rounded-2xl`}>
                             <Image
@@ -82,11 +100,12 @@ function Portfolio(props) {
                             </span>
                             <div
                                 className="z-[1] absolute bottom-0 left-0 w-full px-7 pb-6 invisible opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 group-hover:mb-0 transition ease-out duration-[160ms]">
-                                <a className={`${KanitFont.variable} font-[kanit] font-semibold text-xl lg:text-3xl tracking-[0.5px] transition-all ease-linear duration-100`}
+                                <a className={`${KanitFont.variable} font-[kanit] font-semibold text-xl lg:text-3xl tracking-[0.5px] transition-all ease-linear duration-100 animate-pulse hover:animate-none`}
                                    href={`${item.link_name}`} target={"_blank"}>{item.pro_name}</a>
                             </div>
-                        </div>) : null
-                ))}
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );
