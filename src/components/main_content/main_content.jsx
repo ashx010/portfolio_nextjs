@@ -5,6 +5,7 @@ import Portfolio from "./portfolio";
 import Resume from "./resume";
 import Skills from "./skills";
 import Blog from "./blog";
+import Contact from "./contact";
 
 function MainContent(props) {
     return (
@@ -16,6 +17,7 @@ function MainContent(props) {
                 <Resume />
                 <Skills />
                 <Blog />
+                <Contact />
             </div>
         </main>
     );
