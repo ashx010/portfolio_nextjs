@@ -4,6 +4,7 @@ import About from "./about";
 import Portfolio from "./portfolio";
 import Resume from "./resume";
 import Skills from "./skills";
+import Blog from "./blog";
 
 function MainContent(props) {
     return (
@@ -14,6 +15,7 @@ function MainContent(props) {
                 <Portfolio />
                 <Resume />
                 <Skills />
+                <Blog />
             </div>
         </main>
     );

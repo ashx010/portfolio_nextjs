@@ -84,14 +84,14 @@ function Portfolio(props) {
                     .slice(0, 4)
                     .map((item, index) => (
                         <div key={index}
-                             className={`group p-4 w-full h-fit overflow-hidden relative aspect-square rounded-2xl`}>
+                             className={`group p-4 w-full h-fit overflow-hidden relative aspect-square rounded-[8px]`}>
                             <Image
                                 src={item.src}
                                 alt={item.alt}
                                 fill={true}
                                 className={`group-hover:blur-[1.5px] group-hover:scale-105 group-hover:brightness-50`}
                                 sizes="50vw"
-                                style={{objectFit: "cover", objectPosition: "center", borderRadius: "1rem"}}
+                                style={{objectFit: "cover", objectPosition: "center"}}
                                 priority={true}
                             />
                             <span
